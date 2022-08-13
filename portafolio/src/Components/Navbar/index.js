@@ -1,51 +1,30 @@
-import React from 'react';
+import React from 'react'
+import './NavbarElements.css'
 
-
-import { Nav, 
-    NavbarContainer,
-    NavLogo,
-    MobileIcon ,
-    NavMenu,
-    NavItem,
-    NavLinks,
-  
-
-} from './NavbarElements';
-
-
-const Navbar = ({toggle}) => {
-
-    
+const Navbar = () => {
     return (
-        <>
-            <Nav>
-                <NavbarContainer>
-                   
-                    <NavLogo to="/">
-                  
-                    </NavLogo>
-                  
-                    <MobileIcon onClick={toggle}>
-                
-                    </MobileIcon>
-                    <NavMenu>
-                        <NavItem>
-                            <NavLinks to='Inicio'>Inicio</NavLinks>
-                        </NavItem>
-                        <NavItem>
-                            <NavLinks to='Nosotros'>Nosotros</NavLinks>
-                        </NavItem>
-                        <NavItem>
-                            <NavLinks to='servicios'>servicios</NavLinks>
-                        </NavItem>
-                        <NavItem>
-                            <NavLinks to='proyectos'>Proyetos</NavLinks>
-                        </NavItem>
-                     
-                    </NavMenu>
-                </NavbarContainer>
-            </Nav>
-        </>
+        <div Class="Contenedor">
+            <h1>
+                <span> Developer Danilo</span>
+            </h1>
+
+            <ul>
+                <li>
+                    Inicio
+                </li>
+                <li>
+                    About
+                </li>
+                <li>
+                    Proyectos
+                </li>
+                <li>
+                    Certificates
+                </li>
+            </ul>
+
+        </div>
+
     )
 }
 
