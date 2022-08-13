@@ -1,27 +1,24 @@
 import React, { useState, useRef, useEffect } from 'react';
 import './HeroElements.css';
+import Aos from "aos";
+import "aos/dist/aos.css"
+import '../Data/Information';
 
 
-import  '../Data/Information';
-
-const InformationData={
-    heading:"ACERCA DE MI ",
-    paragraphOne:"SOY ESTUDIANTE DE 5 SEMESTRE LA UNIVERSIDAD INDUSTRIAL DE SANTANDER ",
-    paragraphTwo:'JDKSGKB;K GSFHOEWVHFOE;WFQ;',
-    reverse:false,
-    delay:100
-
-}
 
 
-  
 
-const Hero = ({ slides }) => {
+
+const Hero = ({ slides ,heading,paragraphOne,paragraphTwo}) => {
 
 
     const [current, SetCurrent] = useState(0)
     const length = slides.length
     const timeout = useRef(null)
+
+    useEffect(()=>{
+        Aos.init({duration:2000});
+      },[]);
 
 
     useEffect(() => {
@@ -55,41 +52,41 @@ const Hero = ({ slides }) => {
     }
 
 
+   
 
 
 
 
 
-  return (
-    <div class="Contenedor-Hero">
-     <div class="column-right">
-     {slides.map((slide, index) => {
-                    return (
+    return (
+        <div class="Contenedor-Hero" data-aos="fade-right">
+            {slides.map((slide, index) => {
+                return (
 
-
-                        <div  class="HeroSlide"  key={index}>
+                    <div>
+                        <div class="HeroSlide" key={index}>
                             {index === current && (
-
-                              <div class="HeroSlider"> 
-                               <div class="column-right">
+                                <div class="column-right">
                                     <img class="HeroImage" src={slide.image} alt={slide.alt} />
-                                    </div>
-</div>
+                                </div>
                             )}
                         </div>
-                        
-                    );
-                })}
-     </div>
+                    </div>
+
+                );
+            })}
 
 
-     <div class="column-left">
-     <h1>{InformationData.heading}</h1>
-     <p>{InformationData.paragraphOne}</p>
 
-     </div>
-    </div>
-  )
+            <div class="column-left">
+                <h1 class="Hero-h1">{heading}</h1>
+            
+                <h2 class="hero-h2">{paragraphOne}</h2>
+              
+                
+            </div>
+        </div>
+    )
 }
 
 export default Hero

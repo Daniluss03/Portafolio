@@ -1,10 +1,11 @@
 
 import foto1 from '../images/Danilo.jpg';
 import foto2 from '../images/Danilo2.jpeg'
-const InformationData={
+
+export const InformationData={
     heading:"ACERCA DE MI ",
-    paragraphOne:"SOY ESTUDIANTE DE 5 SEMESTRE LA UNIVERSIDAD INDUSTRIAL DE SANTANDER ",
-    paragraphTwo:'JDKSGKB;K GSFHOEWVHFOE;WFQ;',
+    paragraphOne:"Soy estudiante de ingeniería de Sistemas de la Universidad Industrial de Santander, con conocimientos en lenguajes de programación como java y python. Tengo especial interés por el desarrollo software, web y el Ethical Hacking por lo cual he desarrollado proyectos relacionados con estos enfoques. ",
+    paragraphTwo:" - Programación Java (Orientada a objetos,Interfaces graficas). - Programación en Python ( Orientada a objetos, Flask,Pygame)  React js   Idioma  Inglés(B2)",
     reverse:false,
     delay:100
 
