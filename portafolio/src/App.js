@@ -5,7 +5,7 @@ import {SliderData,InformationData} from "./Components/Data/Information"
 function App() {
   return (
     <Router>
-   <Navbar/>
+ <Navbar/>
    <Hero slides={SliderData} {...InformationData} />
    </Router>);
 }
