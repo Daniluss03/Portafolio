@@ -2,8 +2,9 @@ import React from 'react'
 import './HeroElements.css';
 const Hero = () => {
     return (
+        <div class="section"  id="inicio"> 
        <div class="Contenedor">
-        <header class="header">
+         <header class="header">
             <div clas="col">
                 <div class="content">
                     <h1 class="heading"> About me<span>Danilo</span> </h1>
@@ -16,7 +17,8 @@ const Hero = () => {
                 <img>
                 </img>
             </div>
-        </header>
+        </header> 
+        </div>
         </div>
      
     )
