@@ -19,63 +19,105 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-   width: 60%;
-   height: 100%;
+    width: 60%;
+    height: 100%;
     background-color: #fff;
 }
 
-.Column-rigth{
+.Column-rigth {
     display: flex;
     flex-direction: block;
     justify-content: center;
     align-items: flex-start;
     line-height: 1.4;
-    padding :2rem 2rem;
+    padding: 2rem 2rem;
     background-color: #fff;
 }
 
-.Column-rigthS{
+.Column-rigthS {
     display: flex;
-    flex-direction: block;
+    flex-direction: column;
     justify-content: center;
     align-items: flex-start;
     line-height: 1.4;
-    padding :2rem 2rem;
+    padding: 2rem 2rem;
     background-color: #fff;
 }
-.HeroSlide{
+
+.HeroSlide {
     z-index: 1;
-    width:100%;
-    height:100%;
+    width: 100%;
+    height: 100%;
 
 }
-.HeroSlider{
-  position:absolute;
-  display: flex;
+
+.HeroSlider {
+    position: absolute;
+    display: flex;
 }
 
-.HeroImage{
+.HeroImage {
     max-width: 40%;
     border-radius: 8px;
     display: block;
     margin: 0px auto;
-   
+
 }
 
-@media only screen and(max-width:640px){
-    .Contenedor-Hero{
+@media only screen and(max-width:640px) {
+    .Contenedor-Hero {
         display: block;
     }
-    .column-left{
+
+    .column-left {
         width: 100%;
         box-sizing: border-box;
     }
-    .column-right{
+
+    .column-right {
         width: 40%;
         box-sizing: border-box;
     }
-    img{
+
+    img {
         width: 100%;
         box-sizing: border-box;
     }
 }
+
+h1 {
+    text-align: center;
+    font-size: 3.5rem;
+    color: #4e4039;
+    margin-bottom: 64px;
+}
+
+.h1-cards {
+    text-align: center;
+    font-size: 1.5rem;
+    color: #4e4039;
+    margin-bottom: 64px;
+}
+
+
+.container{
+    max-width: 390%;
+    padding: 20px;
+    display: grid;
+    grid-auto-flow: column;
+    column-gap: 1rem;
+    overflow-x: auto;
+ }
+ 
+ 
+ .container::-webkit-scrollbar{
+     display: none;
+ }
+
+    .container .card .imgBx img{
+        max-width: 36%;
+        border-radius: 8px;
+        display: block;
+        margin: 0px auto;
+        
+    }

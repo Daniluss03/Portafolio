@@ -5,8 +5,10 @@ import Aos from "aos";
 import "aos/dist/aos.css"
 
 
-const Starts = ({ slides }) => {
+import { Rating } from '@mui/material';
 
+const Starts = ({ slides }) => {
+    const [value, setValue] = React.useState(2);
 
     const [current, SetCurrent] = useState(0)
     const length = slides.length
@@ -52,9 +54,10 @@ const Starts = ({ slides }) => {
 
     return (
         <div class="section-starts">
-            <div class="Contenedor-starts">
+            <h1>TOOLS</h1>
+            <div class="Contenedor-starts" data-aos="fade-right"  >
 
-                <div class="Column-left">
+                <div class="Column-left" data-aos="fade-right"  >
                     {slides.map((slide, index) => {
                         return (
 
@@ -74,16 +77,75 @@ const Starts = ({ slides }) => {
 
 
                 <div class="Column-rigthS">
-         
+                    <div class="container">
+                        <div class="imgBx">
+                            <h1 class="h1-cards">REACT</h1>
+                            <label >★</label>
+                            <label >★</label>
+                            <label >★</label>
+                        </div>
+                        <div class="imgBx">
+                            <h1 class="h1-cards">AWS</h1>
+                            <label >★</label>
+                            <label >★</label>
+                            <label >★</label>
+                        </div>
+                        <div class="imgBx">
+                            <h1 class="h1-cards">JAVACRIPT</h1>
+                            <label >★</label>
+                            <label >★</label>
+                            <label >★</label>
+                        </div>
+                        <div class="imgBx">
+                            <h1 class="h1-cards">CSS</h1>
+                            <label >★</label>
+                            <label >★</label>
+                            <label >★</label>
+                        </div>
+
+
+                        <div class="imgBx">
+                            <h1 class="h1-cards">SQL</h1>
+                            <label >★</label>
+                            <label >★</label>
+                            <label >★</label>
+                            <label >★</label>
+                        </div>
+
+                        <div class="imgBx">
+                            <h1 class="h1-cards">HTML</h1>
+                            <label >★</label>
+                            <label >★</label>
+                            <label >★</label>
+                        </div>
+                        <div class="imgBx">
+                            <h1 class="h1-cards">GITHUB</h1>
+                            <label >★</label>
+                            <label >★</label>
+                            <label >★</label>
+                            <label >★</label>
+                        </div>
+                        <div class="imgBx">
+                            <h1 class="h1-cards">GITPOD</h1>
+                            <label >★</label>
+                            <label >★</label>
+                            <label >★</label>
+                            <label >★</label>
+                        </div>
+
+
+
+
+
+
+                    </div>
+
+
 
                 </div>
-
-
-
             </div>
-
         </div>
-        
+
 
     )
 }
