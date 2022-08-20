@@ -1,6 +1,6 @@
 import './StartsElements.css';
 import React, { useState, useRef, useEffect } from 'react';
-
+import { UncontrolledCollapse, CardBody, Card } from 'reactstrap';
 import Aos from "aos";
 import "aos/dist/aos.css"
 
@@ -73,8 +73,8 @@ const Starts = ({ slides }) => {
                 </div>
 
 
-                <div class="Column-rigth">
-
+                <div class="Column-rigthS">
+         
 
                 </div>
 
@@ -83,6 +83,7 @@ const Starts = ({ slides }) => {
             </div>
 
         </div>
+        
 
     )
 }

@@ -15,7 +15,6 @@ const Proyects = () => {
                 <div class="content">
                     <h1>DAVIVIENDA</h1>
                     <p>royecto pagina web recaudo y pago  econ un enfoque en procesos  transaccionales </p>
-
                 </div>
                 
             </div>

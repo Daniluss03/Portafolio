@@ -30,10 +30,19 @@
     justify-content: center;
     align-items: flex-start;
     line-height: 1.4;
-    padding :1rem 2rem;
+    padding :2rem 2rem;
     background-color: #fff;
 }
 
+.Column-rigthS{
+    display: flex;
+    flex-direction: block;
+    justify-content: center;
+    align-items: flex-start;
+    line-height: 1.4;
+    padding :2rem 2rem;
+    background-color: #fff;
+}
 .HeroSlide{
     z-index: 1;
     width:100%;

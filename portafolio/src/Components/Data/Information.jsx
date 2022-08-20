@@ -6,6 +6,7 @@ import foto4 from '../images/html.png'
 import foto5 from '../images/python.webp';
 import foto6 from '../images/react.png'
 import foto7 from '../images/sql.png'
+import foto8 from '../images/github.jpg'
 
 
 
@@ -39,6 +40,10 @@ export const SliderData=[
     },{
       
         image:foto7,
+       
+    },{
+      
+        image:foto8,
        
     },
 ]
