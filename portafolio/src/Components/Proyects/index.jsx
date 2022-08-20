@@ -2,6 +2,7 @@ import React from 'react'
 import './ProyectsElements.css'
 import imagen  from '../images/davivienda.jpg';
 import imagen2 from '../images/loteria-de-bogota.jpg' ;
+import imagen3 from '../images/fundacionDeLaMujer.jpg'
 const Proyects = () => {
     return (
         <div class="section-proyects"> 
@@ -12,8 +13,8 @@ const Proyects = () => {
                 <img  src={imagen}/>
                 </div>
                 <div class="content">
-                    <h2>Card one</h2>
-                    <p>adhwqbdkqwbdjbdjkqDQKjbdbdjkvh heoghghreghkreg</p>
+                    <h1>DAVIVIENDA</h1>
+                    <p>royecto pagina web recaudo y pago  econ un enfoque en procesos  transaccionales </p>
 
                 </div>
                 
@@ -23,18 +24,18 @@ const Proyects = () => {
                 <img  src={imagen2}  />
                 </div>
                 <div class="content">
-                    <h2>Card one</h2>
-                    <p>adhwqbdkqwbdjbdjkqDQKjbdbdjkvh heoghghreghkreg</p>
+                    <h1>LOTERIA DE BOGOTA</h1>
+                    <p>Realizacion de una pagina que permitiera la venta de billetes y fracciones de loteria  fisica y virtual</p>
 
                 </div>
                 
             </div>
             <div class="card">
                 <div class="imgBx">
-                <img  src={imagen}/>
+                <img  src={imagen3}/>
                 </div>
                 <div class="content">
-                    <h2>Card one</h2>
+                    <h1>FUNDACION DE LA MUJER</h1>
                     <p>adhwqbdkqwbdjbdjkqDQKjbdbdjkvh heoghghreghkreg</p>
 
                 </div>

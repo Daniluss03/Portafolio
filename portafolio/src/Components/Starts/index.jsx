@@ -1,24 +1,20 @@
+import './StartsElements.css';
 import React, { useState, useRef, useEffect } from 'react';
-import './HeroElements.css';
+
 import Aos from "aos";
 import "aos/dist/aos.css"
-import '../Information';
 
 
-
-
-
-
-const Hero = ({ slides ,heading,paragraphOne,paragraphTwo}) => {
+const Starts = ({ slides }) => {
 
 
     const [current, SetCurrent] = useState(0)
     const length = slides.length
     const timeout = useRef(null)
 
-    useEffect(()=>{
-        Aos.init({duration:2000});
-      },[]);
+    useEffect(() => {
+        Aos.init({ duration: 2000 });
+    }, []);
 
 
     useEffect(() => {
@@ -52,43 +48,43 @@ const Hero = ({ slides ,heading,paragraphOne,paragraphTwo}) => {
     }
 
 
-   
-
-
-
 
 
     return (
-        <div class="Contenedor-Hero" data-aos="fade-right">
-            {slides.map((slide, index) => {
-                return (
+        <div class="section-starts">
+            <div class="Contenedor-starts">
 
-                    <div>
-                        <div class="HeroSlide" key={index}>
-                            {index === current && (
-                                <div class="column-right">
-                                    <img class="HeroImage" src={slide.image} alt={slide.alt} />
+                <div class="Column-left">
+                    {slides.map((slide, index) => {
+                        return (
+
+                            <div>
+                                <div class="HeroSlide" key={index}>
+                                    {index === current && (
+                                        <div class="column-right">
+                                            <img class="HeroImage" src={slide.image} alt={slide.alt} />
+                                        </div>
+                                    )}
                                 </div>
-                            )}
-                        </div>
-                    </div>
+                            </div>
 
-                );
-            })}
-
+                        );
+                    })}
+                </div>
 
 
-            <div class="column-left">
-                
-               
-                <h1 class="Hero-h1">{heading}</h1>
-              
-                <h2 class="hero-h2">{paragraphOne}</h2>
-              
-                
+                <div class="Column-rigth">
+
+
+                </div>
+
+
+
             </div>
+
         </div>
+
     )
 }
 
-export default Hero
+export default Starts
