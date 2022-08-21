@@ -19,7 +19,7 @@ const Footer = () => {
               <h1>jhondanilo3@gmail.com</h1>
                <h1>https://github.com/Daniluss03</h1>  
                 <div>
-                  <ButtonGallery onClick={()=>spdfGenerator()}>GENERAR MY CV</ButtonGallery>
+                  <button onClick={()=>spdfGenerator()}>GENERAR MY CV</button>
                 </div>
             </Wrapper>
         </Container>
