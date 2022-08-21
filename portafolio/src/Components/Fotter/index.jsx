@@ -17,7 +17,7 @@ const Footer = () => {
         <Container>
             <Wrapper>
               <h1>jhondanilo3@gmail.com</h1>
-               <h2>Github: fdflsndfsf</h2>  
+               <h1>https://github.com/Daniluss03</h1>  
                 <div>
                   <ButtonGallery onClick={()=>spdfGenerator()}>GENERAR MY CV</ButtonGallery>
                 </div>
