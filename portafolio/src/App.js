@@ -1,21 +1,20 @@
 import Navbar from "./Components/Navbar";
 import { BrowserRouter as Router } from 'react-router-dom'
 
-import { SliderData } from "./Components/Data/Information"
+import { SliderData} from "./Components/Data/Information"
+
+import { PersonalInformation} from "./Components/Data/InfoSectionInformation";
+
 import Proyects from "./Components/Proyects";
 import Starts from "./Components/Starts";
 import Hero from "./Components/Hero";
-import React, { useState } from "react"
-import style, { ThemeProvider } from "styled-components";
-import { lightTheme, darktheme, GlobalStyles } from "./Components/Themes"
+import React  from "react"
+
 import Footer from "./Components/Fotter";
+import InfoSection from "./Components/InfoSection";
 
 function App() {
-   const [theme, setTheme] = useState("dark");
-
-   const themeToggler = () => {
-      theme === "light" ? setTheme("dark") : setTheme("light");
-   }
+  
 
    return (
       <Router>
@@ -23,9 +22,9 @@ function App() {
 
          <Navbar />
          <Hero />
+         <InfoSection   personal={PersonalInformation}/>
          <Starts slides={SliderData} />
-         <Proyects />
-        
+         <Proyects  />
          <Footer/>
 
       </Router>);

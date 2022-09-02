@@ -1,11 +1,13 @@
 import styled from 'styled-components';
 
 export const Container = styled.div`
-  padding: 80px 60px;
-  background: radial-gradient(circle, rgba(255 128 0) 0%, rgba(255 128 0) 100%);
-  @media (max-width: 1000px) {
-    padding: 70px 30px;
-  }
+
+padding: 80px 60px;
+background: radial-gradient(circle, rgba(255 255 255) 100%, rgba(255 128 0) 100%);
+@media (max-width: 1000px) {
+  padding: 30px 70px 
+
+
 `;
 
 export const Wrapper = styled.div`
@@ -14,7 +16,7 @@ export const Wrapper = styled.div`
     justify-content: center;
     max-width: 1000px;
     margin: 0 auto;
-   background: #fff; 
+   background: #ff8000; 
 `
 
 export const Column = styled.div`

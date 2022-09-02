@@ -12,9 +12,9 @@ const Hero = () => {
     }, []);
 
     return (
-        <div class="section" data-aos="fade-rigth" id="inicio">
-            <div class="Contenedor" >
-                <header class="header" data-aos="fade-rigth">
+        <div class="section-hero" data-aos="fade-rigth" id="inicio">
+            <div class="Contenedor-hero" >
+                <header class="header">
                     <div clas="col">
                         <div class="content">
                             <h1 class="heading" > About me<span> DEVELOPER DANILO</span>  </h1>
@@ -23,7 +23,7 @@ const Hero = () => {
 
                     </div>
                     <div>
-                        <img src={imagen} class="svg" alt="" />
+                        <img src={imagen} class="sgv-hero" alt="" />
                     </div>
                 </header>
             </div>
