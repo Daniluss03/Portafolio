@@ -16,25 +16,21 @@ const Navbar = () => {
         <div className='header'>
             <nav className='navbar'>
                 <a href='/' className='logo'>
-                    Developer Daniluss
+                 
                 </a>
-                <div className='hamburger' onClick={handleClick}>
-                    {click ? (<FaTimes size={30} style={{ color: '#ffffff' }} />)
-                        : (<FaBars size={30} style={{ color: '#ffffff' }} />)}
-
-                </div>
+           
                 <ul className={click ? "nav-menu active" : "nav-menu"}>
                     <li className='nav-item'>
-                        <Link to="Home" spy={true} smooth={true} offset={50} duration={500} onClick={closeMenu}>Home</Link>
+                        <Link to="Home" spy={true} smooth={true} offset={50} duration={500} >Home</Link>
                     </li>
                     <li className='nav-item'>
-                    <Link to="about" spy={true} smooth={true} offset={50} duration={500} onClick={closeMenu}>About</Link>
+                    <Link to="about" spy={true} smooth={true} offset={50} duration={500} >About</Link>
                     </li>
                     <li className='nav-item'>
-                    <Link to="proyects" spy={true} smooth={true} offset={50} duration={500} onClick={closeMenu}>Proyects</Link>
+                    <Link to="proyects" spy={true} smooth={true} offset={50} duration={500} >Proyects</Link>
                     </li>
                     <li className='nav-item'>
-                    <Link to="contact" spy={true} smooth={true} offset={50} duration={500} onClick={closeMenu}>Contact</Link>
+                    <Link to="contact" spy={true} smooth={true} offset={50} duration={500} >Contact</Link>
                     </li>
                 </ul>
             </nav>
