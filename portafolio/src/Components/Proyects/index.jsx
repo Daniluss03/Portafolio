@@ -24,7 +24,7 @@ const Proyects = () => {
 
 
     return (
-        <div className='section' id='portafolio' data-aos="fade-rigth">
+        <div className='section' id='proyects' data-aos="fade-rigth">
             <h5>My recents proyects</h5>
       
             <div className='container'>
@@ -35,12 +35,12 @@ const Proyects = () => {
                             <article key={id} className='container-items'>
                                <h3>{title}</h3>
                                     <img src={image} className='container-imgBx' alt={title} />
-                                   
-                                    <a className=''>{github}</a>
+                                  
+                                <div className='container-cta'>
+                                 
+                                <a className=''>{github}</a>
                                     <a>{demo}</a>
                                
-                                <div className='container-cta'>
-                                
                                 </div>
                             </article>
                         )

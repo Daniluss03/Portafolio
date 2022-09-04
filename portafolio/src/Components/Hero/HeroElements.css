@@ -146,3 +146,12 @@
 
     }
 }
+@media screen and(max-width:412px) {
+    .heading span{
+        display: flex;
+    color:#ff8000;
+    font-size: 20px;
+    font-weight: 100;
+    line-height: 20px;
+    }
+}

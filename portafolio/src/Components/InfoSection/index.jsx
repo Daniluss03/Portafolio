@@ -3,7 +3,7 @@ import  './InfoSection.css'
 const InfoSection = ({personal}) => {
   return (
   
-<div class="section-info">
+<div class="section-info" id='about'>
 <div className='Contenedor-info'>
 
 <h1>INFORMATION</h1>

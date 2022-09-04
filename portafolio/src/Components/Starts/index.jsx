@@ -9,10 +9,10 @@ import foto6 from '../images/react.png'
 import foto7 from '../images/sql.png'
 import foto8 from '../images/github.jpg'
 
-
-import imagen5 from'../images/davivienda.jpg';
 import Aos from "aos";
 import "aos/dist/aos.css"
+import Box from '@mui/material/Box';
+import Slider from '@mui/material/Slider';
 
 
 import React from 'react'
@@ -32,9 +32,21 @@ const Starts = () => {
         <img src={foto8}/>
         <h1>TOOLS</h1>
    </div>
-        
-       
+
+ 
     </div>
+    <Box sx={{ width: 300 }}>
+    
+    <Slider defaultValue={70} step={10} marks min={10} max={110} disabled />
+
+    <Slider defaultValue={70} step={10} marks min={10} max={110} disabled />
+
+    <Slider defaultValue={70} step={10} marks min={10} max={110} disabled />
+
+    <Slider defaultValue={70} step={10} marks min={10} max={110} disabled />
+
+    <Slider defaultValue={70} step={10} marks min={10} max={110} disabled />
+  </Box>
     </div>
   )
 }

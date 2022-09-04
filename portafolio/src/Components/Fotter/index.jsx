@@ -1,8 +1,7 @@
 import jsPDF from 'jspdf';
 import React from 'react'
-import { Container, Wrapper, Column, Link } from './FotterElements';
-import {ButtonGallery} from '../Button/button'
 
+import './Footer.css'
 import imagen2 from '../images/aws.png';
 const Footer = () => {
 
@@ -14,15 +13,22 @@ const Footer = () => {
       }
    
     return (
-        <Container>
-            <Wrapper>
-              <h1>jhondanilo3@gmail.com</h1>
-               <h1>https://github.com/Daniluss03</h1>  
-                <div>
-                  <button onClick={()=>spdfGenerator()}>GENERAR MY CV</button>
-                </div>
-            </Wrapper>
-        </Container>
+      <div className='footer'>
+      <div className='container'>
+          <ul>
+              <li className='nav-item'>
+                  <a href='Hero'>Home</a>
+              </li>
+              <li className='nav-item'>
+                  <a href='#about'>About</a>
+              </li>
+              <li className='nav-item'>
+                  <a href='#proyects'>Proyects</a>
+              </li>
+          </ul>
+          <button onClick={()=>spdfGenerator()}>GENERAR MY CV</button>
+      </div>
+  </div>
     )
 }
 
