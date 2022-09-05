@@ -12,7 +12,7 @@ import React  from "react"
 
 import Footer from "./Components/Fotter";
 import InfoSection from "./Components/InfoSection";
-import  Contact  from "./Components/Contact";
+
 
 
 
@@ -30,7 +30,7 @@ function App() {
          <InfoSection   personal={PersonalInformation}/>
          <Starts slides={SliderData} />
          <Proyects  />
-         <Contact/>
+      
          <Footer/>
 
       </Router>);

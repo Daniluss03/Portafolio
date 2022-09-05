@@ -35,18 +35,7 @@ const Starts = () => {
 
  
     </div>
-    <Box sx={{ width: 300 }}>
-    
-    <Slider defaultValue={70} step={10} marks min={10} max={110} disabled />
-
-    <Slider defaultValue={70} step={10} marks min={10} max={110} disabled />
-
-    <Slider defaultValue={70} step={10} marks min={10} max={110} disabled />
-
-    <Slider defaultValue={70} step={10} marks min={10} max={110} disabled />
-
-    <Slider defaultValue={70} step={10} marks min={10} max={110} disabled />
-  </Box>
+   
     </div>
   )
 }

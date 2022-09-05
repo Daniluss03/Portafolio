@@ -37,23 +37,7 @@ const Hero = () => {
                 </header>
 
             </div>
-            <BottomNavigation  >
-            <BottomNavigationAction
-                        label="Recents"
-                        value="recents"
-                        icon={<RestoreIcon />}
-                    />
-                    <BottomNavigationAction
-                        label="Favorites"
-                        value="favorites"
-                        icon={<FavoriteIcon />}
-                    />
-                    <BottomNavigationAction
-                        label="Nearby"
-                        value="nearby"
-                        icon={<LocationOnIcon />}
-                    />
-                        </BottomNavigation>
+        
         </div>
 
     )
